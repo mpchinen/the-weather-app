@@ -38,5 +38,6 @@ jobs:
       - name: Desplegar a Azure App Service
         uses: azure/webapps-deploy@v3
         with:
-          app-name: "<the-weather-app-demo>"
+          app-name: the-weather-app-demo
+          resource-group: rg-weather-app
           package: src
