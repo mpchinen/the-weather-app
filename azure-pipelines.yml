@@ -16,7 +16,9 @@ stages:
             inputs:
               versionSpec: '22.x'
             displayName: 'Use Node 22'
-          - script: npm ci --omit=dev
+          - script: 
+              cd src
+              npm ci --omit=dev
             displayName: 'Install dependencies'
           - script: npm run build || echo "No build step, continuing"
             displayName: 'Optional build'
