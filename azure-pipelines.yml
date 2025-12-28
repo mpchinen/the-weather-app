@@ -16,7 +16,7 @@ stages:
             inputs:
               versionSpec: '22.x'
             displayName: 'Use Node 22'
-          - script: 
+          - script: |
               cd src
               npm ci --omit=dev
             displayName: 'Install dependencies'
